@@ -1,0 +1,20 @@
+{% extends 'shop.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main_shop/css/main.css' %}">
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+    <div class="content_wrap2">
+        <h1 class="title">{{ product.title }}</h1>
+        <p class="descrp">{{ product.description }}</p>
+        <div class="all_descrp">
+           <p class="Categ">Category................{{ product.category }}</p>
+        <p class="Price">Price................{{ product.price }}$</p>
+       </div>
+        <div class="s_btns">
+            <button class="s_btn" type="submit">BUY</button>
+        </div>
+
+    </div>
+{% endblock %}

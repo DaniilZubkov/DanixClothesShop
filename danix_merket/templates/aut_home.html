@@ -1,0 +1,18 @@
+{% extends 'shop.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main_shop/css/main.css' %}">
+
+
+
+{% block content %}
+     <h1 class="Chussing">Choos the action please</h1>
+     {% if user.is_authenticated %}
+        <div class="login_and_logout_wrap">
+            <a href="{% url 'logout' %}" class="logout_and_login">Logout</a>  <a href="{% url 'register' %}" class="register_hr">Register</a>
+        </div>
+     {% else %}
+        <div class="login_and_logout_wrap">
+            <a href="{% url 'login' %}" class="logout_and_login">Login</a>  <a href="{% url 'register' %}" class="register_hr">Register</a>
+        </div>
+     {% endif %}
+{% endblock %}

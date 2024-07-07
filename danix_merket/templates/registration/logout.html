@@ -1,0 +1,14 @@
+{% extends 'shop.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main_shop/css/main.css' %}">
+
+
+{% block content %}
+     <h1>LOGout</h1>
+     <hr>
+     <form action="{% url 'logout' %}" method="post">
+         {{ form }}
+         {% csrf_token %}
+         <button type="submit">submit</button>
+     </form>
+{% endblock %}
