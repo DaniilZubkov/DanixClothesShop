@@ -39,12 +39,12 @@
            <div class="user_name_tit">Your nickname: {{ user }}</div>
     {% for product in data %}
          <div class="content_wrap">
-        <h2 class="content_title"><a href="">{{ product.title }}</a></h2>
+        <h2 class="content_title"><a href="{% url 'shop:single' product.id %}">{{ product.title }}</a></h2>
         <i class="fa-brands fa-cuttlefish"></i>
         <div class="content_text">{{ product.description }}</div>
         <div class="content_cost">{{ product.price }}$</div>
            <div class="buttons-content">
-               <button class="content_btn"><a href="">BUY</a></button>
+               <button class="content_btn"><a href="{% url 'shop:single' product.id %}">BUY</a></button>
            </div>
         </div>
        </section>

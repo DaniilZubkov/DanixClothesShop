@@ -9,10 +9,11 @@
     <form class="register_form" action="{% url 'register' %}" method="post">
         {% csrf_token %}
         <div class="register_form_shell">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password1" placeholder="Password" required>
-            <input type="password" name="password2" placeholder="Password (again)" required>
+            {{ form }}
+<!--            <input type="text" name="username" placeholder="Username" required>-->
+<!--            <input type="email" name="email" placeholder="Email" required>-->
+<!--            <input type="password" name="password1" placeholder="Password" required>-->
+<!--            <input type="password" name="password2" placeholder="Password (again)" required>-->
             <button type="submit" class="register_btn">Register</button>
         </div>
     </form>

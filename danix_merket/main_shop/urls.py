@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'shop'
 urlpatterns = [
     path('', views.index, name='home'),
-    path('single/<int:product_id>/', views.single, name='single')
+    path('<int:product_id>', views.single, name='single')
 ]

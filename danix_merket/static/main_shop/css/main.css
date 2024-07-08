@@ -210,6 +210,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #ffffff;
 }
 
 .register_form_shell > input{
@@ -318,3 +319,59 @@ a{
     border-radius: 5px;
     border: 0.5px rgb(230, 230, 230) solid;
 }
+
+.content_wrap2 {
+    color: #ffffff;
+}
+
+/* Single */
+.title{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.content_wrap2 {
+    background: #2c2c2c;
+    border: 2px rgb(230, 230, 230) solid;
+    width: 1200px;
+    height: 650px;
+    border-radius: 5px;
+    margin: 100px auto;
+}
+
+.descrp {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Categ {
+    color: #ffffff;
+}
+
+.Price {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+.all_descrp {
+    margin-top: 200px;
+    margin-left: 235px;
+}
+
+.s_btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.s_btn {
+    width: 80px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: #181818;
+}
+
